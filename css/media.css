@@ -1,0 +1,220 @@
+@media (max-width: 767px) {
+  header .navbar > ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--background-color);
+    flex-direction: column;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  header .navbar.active > ul {
+    display: flex;
+  }
+  header .navbar > ul > li {
+    width: 100%;
+    padding: 0.5rem 0;
+  }
+  header .navbar > ul > li > a {
+    padding: 10px 15px;
+    width: 100%;
+  }
+  header .dropdown-i,
+  header .subdropdown-i {
+    position: static;
+    width: 100%;
+    box-shadow: none;
+    padding: 0;
+    display: none;
+  }
+  header .navbar > ul > li:hover .dropdown-i,
+  header .dropdown-i > ul > li:hover .subdropdown-i {
+    display: none;
+  }
+  header .dropdown-i.active,
+  header .subdropdown-i.active {
+    display: block;
+  }
+  header .dropdown-i > ul > li,
+  header .subdropdown-i > ul > li {
+    padding-left: 1rem;
+  }
+  header .nav-btn {
+    margin: 1rem 0;
+    text-align: left;
+  }
+  header .navbar .toggle-btn {
+    display: block;
+    font-size: 1.5rem;
+    color: var(--heading-color);
+    padding: 0.5rem;
+  }
+  main .hero {
+    padding-top: 80px;
+  }
+  .hero .row {
+    flex-direction: column;
+  }
+  .col-6 {
+    width: 100%;
+  }
+  .hero .hero-content h3 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  .hero .hero-content p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .hero-btns {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .hero-btns .vedio-btn {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+  .hero .hero-img {
+    margin-top: 1rem;
+    animation: none;
+  }
+  .features .row {
+    flex-direction: column;
+  }
+  .col-4 {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .features .features-info {
+    margin: 0;
+    padding: 30px 15px;
+  }
+  .about .row {
+    flex-direction: column;
+  }
+  .about .about-img {
+    text-align: left;
+  }
+  .about .about-img img {
+    max-width: 80%;
+  }
+  .about .about-img a {
+    font-size: 2rem;
+  }
+  .about .about-content {
+    padding-left: 0;
+    padding-top: 1rem;
+  }
+  .about .about-content h3 {
+    font-size: 1.5rem;
+  }
+  .stats .row {
+    flex-direction: column;
+  }
+  .col-3 {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .stats .stats-info {
+    padding: 1rem;
+  }
+  .stats .stats-info span {
+    font-size: 2.5rem;
+  }
+  .services .row {
+    flex-direction: column;
+  }
+  .services .services-details {
+    margin: 0;
+    padding: 40px 15px;
+  }
+  .portfolio .row {
+    flex-direction: column;
+  }
+  .portfolio .portfolio-item {
+    margin-bottom: 1rem;
+  }
+  .portfolio .navbar ul {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .portfolio .navbar ul li {
+    margin: 0.5rem;
+  }
+  .footer .row {
+    flex-direction: column;
+  }
+  .footer .col-4,
+  .footer .col-2 {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .footer .footer-newsletter form {
+    flex-direction: column;
+  }
+  .footer .footer-newsletter form input[type="email"] {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  .footer .footer-newsletter form input[type="submit"] {
+    position: static;
+    width: 100%;
+    padding: 10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  header .navbar > ul {
+    flex-wrap: wrap;
+  }
+  header .navbar > ul > li {
+    margin: 0.5rem;
+  }
+  header .nav-btn {
+    margin-left: 1rem;
+  }
+  header .navbar .toggle-btn {
+    display: none;
+  }
+  .hero .hero-content h3 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+  .hero .hero-img {
+    margin-top: -3rem;
+  }
+  .col-4,
+  .col-3 {
+    width: 50%;
+  }
+  .features .features-info,
+  .services .services-details {
+    margin: 0 5px;
+    padding: 40px 10px;
+  }
+  .footer .col-4 {
+    width: 50%;
+  }
+  .footer .col-2 {
+    width: 25%;
+  }
+}
+@media (min-width: 992px) {
+  header .navbar .toggle-btn {
+    display: none;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-4 {
+    width: 33.32%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+}
