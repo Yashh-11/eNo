@@ -5,10 +5,10 @@ document.addEventListener("DOMContentLoaded",()=>{
     setTimeout(()=>{
         model.style.display = "flex";
         wrap.style.filter = "blur(4px)";
-    },1000);
+    },2000);
     button.addEventListener("click", ()=>{
         model.style.display = "none";
         wrap.style.filter = "blur(0px)";
-    })
+    });
     
-})
+});
